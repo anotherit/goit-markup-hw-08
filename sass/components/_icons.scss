@@ -1,0 +1,105 @@
+.contacts__svg{
+    fill:currentColor;
+    margin-right: 10px;
+    &:hover,
+    &:focus{ fill: $accent-cl;}
+    }
+
+.benefits__svg{
+    width: 70px;
+    height: 70px;
+}    
+.benefits__svg--rules{
+    width: 270px;
+    text-align: center;
+background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social__link{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        transition: background-color $fast-anim $timing-function;
+        &:hover,
+        &:focus{
+            background-color: $accent-cl;
+        }
+}
+
+.social__svg{
+    fill: #AFB1B8;  
+    transition: fill $fast-anim $timing-function;
+    
+}
+.social__link:hover .social__svg {
+    fill: #ffffff;
+}
+.social__link:focus .social__svg{
+    fill: #ffffff;
+}
+.customers__link{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(175, 177, 184, 1);
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    fill: #AFB1B8;
+    cursor: pointer;
+    transition: fill $fast-anim $timing-function, border-color $fast-anim $timing-function;
+    &:hover,
+    &:focus{
+        fill: $accent-cl;
+        border-color: $accent-cl;
+    }
+}
+.join__link{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $fast-anim $timing-function;
+    &:hover,
+    :focus{
+        background-color: $accent-cl;
+    }
+}
+.join__svg{
+    fill: $main-bg-cl;
+    transition: fill $fast-anim $timing-function;
+    
+}
+
+.subscribe__svg{
+    margin-left: 10px;
+    fill: $main-bg-cl;
+}
+.form__svg{
+    position: absolute;
+        bottom: 12px;
+        left: 10px;
+    
+        fill: $main-txt-cl;
+        transition: fill $fast-anim $timing-function;
+}
+.form__svg{
+    position: absolute;
+        bottom: 12px;
+        left: 10px;
+    
+        fill: $main-txt-cl;
+        transition: fill $fast-anim $timing-function;
+}

@@ -1,0 +1,42 @@
+.address{
+    display: flex;
+    font-style: normal;
+    margin-top: 20px;
+
+}
+.address__item{
+    margin-bottom: 9px;
+    &:last-child{
+     margin-bottom: 0;
+    }
+}
+.address__link--map{
+    color: $main-bg-cl;
+    transition: color $fast-anim $timing-function;
+    &:hover,
+    &:focus{
+        color: $accent-cl;
+    }
+}
+.address__link--mail{
+    color: $footer-txt-cl;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition: color $fast-anim $timing-function;
+    &:hover,
+    &:focus{
+        color: $accent-cl;
+    }
+}
+.address__link--tel{
+    color: $footer-txt-cl;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition: color $fast-anim $timing-function;
+    &:hover,
+    &:focus{
+        color: $accent-cl;
+    }
+}

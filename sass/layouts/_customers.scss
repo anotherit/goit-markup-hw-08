@@ -1,0 +1,19 @@
+
+
+.customers__container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.customers{
+    display: flex;
+}
+.customers__item{
+    width: 170px;
+    height: 92px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}

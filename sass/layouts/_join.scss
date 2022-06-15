@@ -1,0 +1,18 @@
+.join{
+    margin-left: 70px;
+}
+.join__title{
+    margin-bottom: 20px;
+    font-weight: $wide-font-weight;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-bg-cl;
+}
+.join__list{
+    display: flex;
+}
+.join__item:not(:last-child){
+    margin-right: 10px;
+}
