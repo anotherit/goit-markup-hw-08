@@ -45,24 +45,7 @@ background-color: #F5F4FA;
 .social__link:focus .social__svg{
     fill: #ffffff;
 }
-.customers__link{
-    display: flex;
-    width: 170px;
-    height: 92px;
-    justify-content: center;
-    align-items: center;
-    color: rgba(175, 177, 184, 1);
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    fill: #AFB1B8;
-    cursor: pointer;
-    transition: fill $fast-anim $timing-function, border-color $fast-anim $timing-function;
-    &:hover,
-    &:focus{
-        fill: $accent-cl;
-        border-color: $accent-cl;
-    }
-}
+
 .join__link{
     display: flex;
         align-items: center;

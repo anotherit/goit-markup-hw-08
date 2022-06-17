@@ -1,17 +1,26 @@
 .section__hero{
+
     background-color: $secondary-bg-cl;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-            url(../images/hero-bcg.webp);
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    //         url(../images/hero-bcg.webp);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
+    // max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-size: auto;
     position: relative;
     background-repeat: no-repeat;
-     
+    min-width: 320px;
+    @media screen and (min-width:480px){
+      padding-top: 118px;
+      padding-bottom: 118px;
+
+    }
+     @media screen and (min-width:768px) {
+        
+     }
 }
 .hero__button{
     background-color: $btn-bg-cl;

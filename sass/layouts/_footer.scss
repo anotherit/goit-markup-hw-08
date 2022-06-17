@@ -6,10 +6,11 @@
 }
 
 .footer__box{
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    // width: 320px;
 }
-.footer__logo{
+.footer__logo{ 
     color: $accent-cl;
     font-family: $secondary-font;
     font-weight: $wide-font-weight;
@@ -19,4 +20,12 @@
 }
 .footer__logo--white{
     color: $main-bg-cl;
+}
+.footer__navigation{
+    @media screen and (max-width:769px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+   
+
 }
