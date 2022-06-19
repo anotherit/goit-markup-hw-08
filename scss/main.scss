@@ -1,0 +1,28 @@
+/* Utils */
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+/* Base styles*/
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+@import './base/js-selectors';
+
+/* Components */
+@import './components/btn';
+@import './components/social-link';
+@import './components/logo';
+@import './components/nav';
+@import './components/modal/module';
+@import './components/btn-filter';
+
+/* layuots */
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/features-section';
+@import './layouts/services-section';
+@import './layouts/team-section';
+@import './layouts/clients-section';
+@import './layouts/footer';
+@import './layouts/portfolio-page';

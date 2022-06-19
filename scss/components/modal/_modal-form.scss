@@ -1,0 +1,139 @@
+.modal-form {
+  &__group {
+    position: relative;
+
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    display: inline-block;
+    width: 100%;
+
+    margin-bottom: 4px;
+
+    color: var(--main-txt-cl);
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    text-align: start;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 11px 12px 11px 43px;
+
+    border: 1px solid var(--grey-border-cl);
+    border-radius: 4px;
+    outline: transparent;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: border-color, fill;
+  }
+
+  &__input:focus,
+  &__input:focus + &__icon,
+  &__input:hover,
+  &__input:hover + &__icon {
+    border-color: var(--accent-cl);
+
+    fill: var(--accent-cl);
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    transition-property: fill;
+
+    fill: var(--secondary-txt-cl);
+  }
+
+  &__textarea {
+    padding: 12px 16px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    resize: none;
+  }
+
+  &__policy-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__checkbox:checked + &__custom-checkbox &__icon-check {
+    opacity: 1;
+  }
+
+  &__custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+
+    border-radius: 4px;
+    border: 2px solid var(--secondary-txt-cl);
+    box-shadow: 0px 4px 4px var(--main-shadow-cl);
+    cursor: pointer;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    transition-property: background-color, outline;
+  }
+
+  &__checkbox:checked + &__custom-checkbox {
+    background-color: var(--accent-cl);
+    border: 2px solid var(--accent-cl);
+  }
+
+  &__checkbox:hover + &__custom-checkbox,
+  &__checkbox:focus + &__custom-checkbox {
+    border: 2px solid var(--accent-cl);
+  }
+
+  &__icon-check {
+    opacity: 0;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    transition-property: fill;
+
+    fill: var(--main-bg-cl);
+  }
+
+  &__agreement-text {
+    color: var(--main-txt-cl);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+
+    @include mq(not-desktop) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+  }
+
+  &__agreement-link {
+    text-decoration-line: underline;
+
+    color: var(--accent-cl);
+  }
+}

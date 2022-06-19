@@ -1,0 +1,30 @@
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  transition-property: background-color, fill;
+
+  &--mode-light {
+    fill: var(--main-icon-cl);
+    background-color: var(--main-bg-cl);
+  }
+
+  &--mode-dark {
+    fill: var(--main-bg-cl);
+    background-color: var(--social-link-mode-dark-cl);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+    fill: var(--main-bg-cl);
+  }
+}

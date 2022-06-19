@@ -1,0 +1,38 @@
+:root {
+  /* Font */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+  --accent-cl: #2196f3;
+  --main-txt-cl: #757575;
+  --secondary-txt-cl: #212121;
+  --third-txt-cl: #ffffff;
+
+  /* Bacground colors */
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #f5f4fa;
+  --third-bg-cl: #2f303a;
+
+  /* Border colors */
+  --header-border-cl: #ececec;
+  --header-border-currenn-cl: #000000;
+  --grey-border-cl: rgba(33, 33, 33, 0.2);
+  --projects-list-border-cl: #eeeeee;
+  --subscribe-form-border-cl: rgba(255, 255, 255, 0.3);
+
+  /* Shadow */
+  --main-shadow-cl: rgba(0, 0, 0, 0.25);
+  --secondary-shadow-cl: rgba(0, 0, 0, 0.15);
+
+  /* Btn */
+  --modal-btn-bg: rgba(0, 0, 0, 0.1);
+  --hero-btn-active-cl: #188ce8;
+
+  /* Other colors */
+  --main-icon-cl: #afb1b8;
+  --backdrop-cl: rgba(0, 0, 0, 0.2);
+  --social-link-mode-dark-cl: rgba(255, 255, 255, 0.1);
+  --address-link-cl: rgba(255, 255, 255, 0.6);
+  --subscribe-form-input-cl: rgba(255, 255, 255, 0.6);
+}

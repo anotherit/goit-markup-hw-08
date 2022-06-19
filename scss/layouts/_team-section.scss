@@ -1,0 +1,131 @@
+/* Team section */
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--secondary-bg-cl);
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    color: var(--secondary-txt-cl);
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    @include mq(desktop) {
+      margin-bottom: 50px;
+
+      font-size: 36px;
+    }
+  }
+
+  &__list {
+    @include mq(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    background-color: var(--main-bg-cl);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @include mq(mobile-only) {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    @include mq(tablet-only) {
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(n + 3) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include mq(desktop) {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__img {
+    @include mq(tablet-only) {
+      width: 354px;
+      height: 374px;
+    }
+    @include mq(desktop) {
+      width: 270px;
+      height: 260px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @include mq(desktop) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+
+    color: var(--secondary-txt-cl);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    color: var(--main-txt-cl);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  &__social-item:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,95 @@
+/* Hero section */
+.hero {
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  text-align: center;
+
+  @include mq(mobile) {
+    max-width: 767px;
+  }
+
+  @include mq(tablet) {
+    max-width: 1199px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* Background for mobile */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-section/hero-bg_sm.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-section/hero-bg_sm.webp');
+
+  @include mq(retina) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg_sm@2x.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg_sm@2x.webp');
+  }
+
+  /* Background for tablet */
+  @include mq(tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg_md.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg_md.webp');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-section/hero-bg_md@2x.jpg');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-section/hero-bg_md@2x.webp');
+    }
+  }
+
+  /*  Background for desktop */
+  @include mq(desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg_lg.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-section/hero-bg_lg.webp');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-section/hero-bg_lg@2x.jpg');
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-section/hero-bg_lg@2x.webp');
+    }
+  }
+
+  &__title {
+    align-items: center;
+    max-width: 360px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    color: var(--third-txt-cl);
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include mq(desktop) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}
